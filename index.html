@@ -1,22 +1,31 @@
 <!DOCTYPE>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <button id="start-game">START GAME</button>
 
-    <div id="show-questions">
-        <div id="question">
+    <div id="show-board" class="s-board">
+      <!--  <div id="question">
           <span></span>
           <input id="answer" />
         </div>
         <button id="check-question"> Check </button>
-        <button id="next-question"> Pasapalabra</button>
-
+        <button id="next-question"> Pasapalabra</button> -->
     </div>
 
-    <script src="lib/questions.js"></script>
-    <script src="lib/board.js"></script>
+    <div id="quest-answ" class="question-answer">
+      <p id="question"></p>
+      <button id="check-question"> Check </button>
+      <button id="next-question"> Pasapalabra</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/questionDB.js"></script>
+    <script src="lib/QuestionConstructor.js"></script>
+    <script src="lib/Board.js"></script>
+    <script src="lib/Game.js"></script>
   </body>
 </html>
