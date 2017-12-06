@@ -3,6 +3,10 @@
   width: 50%;
 }
 
+#input-answer{
+  display: none;
+}
+
 .l-questions{
   max-height: 22px;
   min-width: 30px;
