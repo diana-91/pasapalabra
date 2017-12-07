@@ -1,14 +1,206 @@
-#letters-board{
-  padding: 5px;
+*{
+  margin: 0;
+  position: relative;
+  background-color: #5391fa;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+#description-start{
   width: 50%;
+  height: 100%;
+  padding: 0;
+}
+
+#description{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: #fff;
+
+}
+
+#description h4{
+  font-size: 1.50rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#description p{
+  font-size: 0.90rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#start-game{
+  margin-top: 1em;
+  display: inline-block;
+  padding: 1em 1.5em;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  background-color: #0074d9;
+  color: #fff;
+  font-weight: 900;
+  line-height: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.s-board{
+  padding-top: 2em;
+  width: 100%;
+}
+@media (min-width: 54.75em) {
+    .s-board{
+      position: relative;
+      width: 50%;
+      height: 100%;
+      padding-top: 0; }
 }
 
 #input-answer{
   display: none;
 }
 
+.ls-board{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 0;
+  left: 50%;
+  /*transform: translateX(-50%);*/
+}
+
+.ls-board > *{
+        display: block;
+        position: absolute;
+        top: -55%;
+        left: 405%;
+        width: 2.25em;
+        height: 2.25em;
+        margin: -1.125em; }
+
+/*.ls-board > #lettersA {
+      transform: rotate(270deg) translate(10.6875em) rotate(-270deg); }
+.ls-board > #lettersB {
+      transform: rotate(282.8deg) translate(10.6875em) rotate(-284.4deg); }
+.ls-board > #lettersC {
+      transform: rotate(295.6deg) translate(10.6875em) rotate(-298.8deg); }
+.ls-board > #lettersD {
+      transform: rotate(308.4deg) translate(10.6875em) rotate(-313.2deg); }
+.ls-board > #lettersE {
+      transform: rotate(321.2deg) translate(10.6875em) rotate(-327.6deg); }
+.ls-board > #lettersF {
+      transform: rotate(334deg) translate(10.6875em) rotate(-342deg); }
+.ls-board > #lettersG {
+      transform: rotate(346.8deg) translate(10.6875em) rotate(-356.4deg); }
+    .ls-board > #lettersH {
+      transform: rotate(359.6deg) translate(10.6875em) rotate(-370.8deg); }
+    .ls-board > #lettersI {
+      transform: rotate(372.4deg) translate(10.6875em) rotate(-385.2deg); }
+    .ls-board > #lettersJ {
+      transform: rotate(385.2deg) translate(10.6875em) rotate(-399.6deg); }
+    .ls-board > #lettersK {
+      transform: rotate(398deg) translate(10.6875em) rotate(-414deg); }
+    .ls-board > #lettersL {
+      transform: rotate(410.8deg) translate(10.6875em) rotate(-428.4deg); }
+    .ls-board > #lettersM {
+      transform: rotate(423.6deg) translate(10.6875em) rotate(-442.8deg); }
+    .ls-board > #lettersN {
+      transform: rotate(436.4deg) translate(10.6875em) rotate(-457.2deg); }
+    .ls-board > #lettersÑ {
+      transform: rotate(449.2deg) translate(10.6875em) rotate(-471.6deg); }
+    .ls-board > #lettersO {
+      transform: rotate(462deg) translate(10.6875em) rotate(-486deg); }
+    .ls-board > #lettersP {
+      transform: rotate(474.8deg) translate(10.6875em) rotate(-500.4deg); }
+    .ls-board > #lettersQ {
+      transform: rotate(487.6deg) translate(10.6875em) rotate(-514.8deg); }
+    .ls-board > #lettersR {
+      transform: rotate(500.4deg) translate(10.6875em) rotate(-529.2deg); }
+    .ls-board > #lettersS {
+      transform: rotate(513.2deg) translate(10.6875em) rotate(-543.6deg); }
+    .ls-board > #lettersT {
+      transform: rotate(526deg) translate(10.6875em) rotate(-558deg); }
+    .ls-board > #lettersU {
+      transform: rotate(538.8deg) translate(10.6875em) rotate(-572.4deg); }
+    .ls-board > #lettersV {
+      transform: rotate(551.6deg) translate(10.6875em) rotate(-586.8deg); }
+    .ls-board > #lettersW {
+      transform: rotate(564.4deg) translate(10.6875em) rotate(-601.2deg); }
+    .ls-board > #lettersX {
+      transform: rotate(577.2deg) translate(10.6875em) rotate(-615.6deg); }
+    .ls-board > #lettersY {
+      transform: rotate(590deg) translate(10.6875em) rotate(-615.6deg); }
+    .ls-board > #lettersZ {
+      transform: rotate(602.8deg) translate(10.6875em) rotate(-615.6deg); }*/
+
+      .ls-board > #lettersA {
+            transform: rotate(270deg) translate(10.6875em) rotate(-270deg); }
+      .ls-board > #lettersB {
+            transform: rotate(283.29deg) translate(10.6875em) rotate(-284.4deg); }
+      .ls-board > #lettersC {
+            transform: rotate(296.58deg) translate(10.6875em) rotate(-298.8deg); }
+      .ls-board > #lettersD {
+            transform: rotate(309.87deg) translate(10.6875em) rotate(-313.2deg); }
+      .ls-board > #lettersE {
+            transform: rotate(323.16deg) translate(10.6875em) rotate(-327.6deg); }
+      .ls-board > #lettersF {
+            transform: rotate(336.45deg) translate(10.6875em) rotate(-342deg); }
+      .ls-board > #lettersG {
+            transform: rotate(349.74deg) translate(10.6875em) rotate(-356.4deg); }
+          .ls-board > #lettersH {
+            transform: rotate(363.03deg) translate(10.6875em) rotate(-370.8deg); }
+          .ls-board > #lettersI {
+            transform: rotate(376.32deg) translate(10.6875em) rotate(-385.2deg); }
+          .ls-board > #lettersJ {
+            transform: rotate(389.61deg) translate(10.6875em) rotate(-399.6deg); }
+          .ls-board > #lettersK {
+            transform: rotate(402.90deg) translate(10.6875em) rotate(-414deg); }
+          .ls-board > #lettersL {
+            transform: rotate(416.19deg) translate(10.6875em) rotate(-428.4deg); }
+          .ls-board > #lettersM {
+            transform: rotate(429.48deg) translate(10.6875em) rotate(-442.8deg); }
+          .ls-board > #lettersN {
+            transform: rotate(442.77deg) translate(10.6875em) rotate(-457.2deg); }
+          .ls-board > #lettersÑ {
+            transform: rotate(456.06deg) translate(10.6875em) rotate(-471.6deg); }
+          .ls-board > #lettersO {
+            transform: rotate(469.35deg) translate(10.6875em) rotate(-486deg); }
+          .ls-board > #lettersP {
+            transform: rotate(482.64deg) translate(10.6875em) rotate(-500.4deg); }
+          .ls-board > #lettersQ {
+            transform: rotate(495.93deg) translate(10.6875em) rotate(-514.8deg); }
+          .ls-board > #lettersR {
+            transform: rotate(509.22deg) translate(10.6875em) rotate(-529.2deg); }
+          .ls-board > #lettersS {
+            transform: rotate(522.51deg) translate(10.6875em) rotate(-543.6deg); }
+          .ls-board > #lettersT {
+            transform: rotate(535.80deg) translate(10.6875em) rotate(-558deg); }
+          .ls-board > #lettersU {
+            transform: rotate(549.09deg) translate(10.6875em) rotate(-572.4deg); }
+          .ls-board > #lettersV {
+            transform: rotate(562.38deg) translate(10.6875em) rotate(-586.8deg); }
+          .ls-board > #lettersW {
+            transform: rotate(575.67deg) translate(10.6875em) rotate(-601.2deg); }
+          .ls-board > #lettersX {
+            transform: rotate(588.96deg) translate(10.6875em) rotate(-615.6deg); }
+          .ls-board > #lettersY {
+            transform: rotate(602.25deg) translate(10.6875em) rotate(-615.6deg); }
+          .ls-board > #lettersZ {
+            transform: rotate(615.54deg) translate(10.6875em) rotate(-615.6deg); }
+
+
+
+
 .l-questions{
-  max-height: 22px;
+  /*max-height: 22px;
   min-width: 30px;
   padding: 5px 5px;
   display: table-cell;
@@ -19,10 +211,27 @@
   background: #3498DB;
   border: 5px solid #3498DB;
   color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+
+    display: block;
+    width: 2.25em;
+    height: 2.25em;
+    transition: all .3s ease-in-out;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #0074d9, #004b8d);
+    color: #fff;
+    line-height: 2.25em;
+    text-align: center;
+    text-decoration: none;
+    cursor: default; }
+
 }
 
 #quest-answ{
+  display: none;
   width: 40%;
   height: 30%;
-  border: 2px solid black;
 }
