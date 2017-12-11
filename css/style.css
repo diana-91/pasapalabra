@@ -51,18 +51,16 @@
 }
 
 #description-start{
-  max-width: 50%;
-  min-height: 100%;
+  width: 50%;
+  height: 100%;
   padding: 0;
 }
 
 #description{
   width: 80%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  margin-left: 20%;
   color: #fff;
 
 }
@@ -235,4 +233,7 @@
   display: none;
   color: white;
   font-size: 2.5em;
+  position: absolute;
+  top: 19%;
+  left: 25%;
 }
