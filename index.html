@@ -19,7 +19,10 @@
           Recuerde tener en cuenta las tildes al escribir las palabras, si no se le contarán como error.
         </p>
 
-        <button id="start-game">start game</button>
+        <button id="start-game" class="btn">start game</button>
+
+
+
       </div>
     </div>
 
@@ -29,9 +32,16 @@
     <div id="quest-answ" class="question-answer">
       <p id="question"></p>
       <input type="text" id="input-answer"/>
-      <button id="check-question"> Check </button>
-      <button id="next-question"> Pasapalabra</button>
+      <button id="check-question" class="btn"> Check </button>
+      <button id="next-question" class="btn"> Pasapalabra</button>
     </div>
+
+    <div id="end-game" class="finish-game">
+      <p>¡Fin de la partida!</p>
+      <button id="start-game" class="btn">start game</button>
+    </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="lib/questionDB.js"></script>
